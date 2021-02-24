@@ -1,0 +1,9 @@
+require 'rubygems'
+require 'bundler'
+
+Bundler.require
+
+require './atelier_remote'
+run AtelierRemote
+
+
