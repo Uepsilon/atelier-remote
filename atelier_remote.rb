@@ -1,8 +1,19 @@
 require 'sinatra'
-require 'sinatra/reloader' if development?
+require "sinatra/config_file"
+require 'sinatra/reloader'
+require "sinatra/json"
+
+require_relative 'remote'
 
 class AtelierRemote < Sinatra::Base
-  get '/' do
-    'Hello world!'
+  configure :development do
+    register Sinatra::Reloader
+  end
+
+  register Sinatra::ConfigFile
+  config_file 'config.yml'
+
+  get '/config' do
+    json development: settings.development?, connection: settings.connection
   end
 end

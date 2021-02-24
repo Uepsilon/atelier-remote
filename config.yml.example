@@ -1,0 +1,4 @@
+connection: 
+  port: /dev/ttys0
+  baud: 300
+  mode: 8N1

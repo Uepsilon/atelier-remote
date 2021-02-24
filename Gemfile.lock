@@ -28,6 +28,7 @@ GEM
     rubocop-ast (1.4.1)
       parser (>= 2.7.1.5)
     ruby-progressbar (1.11.0)
+    ruby-termios (1.1.0)
     ruby2_keywords (0.0.2)
     sinatra (2.1.0)
       mustermann (~> 1.0)
@@ -45,6 +46,8 @@ GEM
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     tilt (2.0.10)
+    uart (1.0.0)
+      ruby-termios
     unicode-display_width (2.0.0)
 
 PLATFORMS
@@ -55,6 +58,7 @@ DEPENDENCIES
   sinatra
   sinatra-contrib
   thin
+  uart
 
 BUNDLED WITH
    2.1.4
