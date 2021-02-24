@@ -1,5 +1,5 @@
-require "sinatra"
-require "sinatra/reloader" if development?
+require 'sinatra'
+require 'sinatra/reloader' if development?
 
 class AtelierRemote < Sinatra::Base
   get '/' do
