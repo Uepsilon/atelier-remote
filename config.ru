@@ -3,7 +3,6 @@ require 'bundler'
 
 Bundler.require
 
-require './atelier_remote'
+require_relative 'lib/atelier_remote'
+
 run AtelierRemote
-
-
